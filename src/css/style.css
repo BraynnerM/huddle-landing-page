@@ -1,0 +1,122 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: absolute;
+    top: 53%;
+    left: 57.2%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 1440px;
+    max-height: 800px;
+    background: var(--violet) url(../images/bg-desktop.svg) no-repeat center center fixed;
+    display: grid;
+    grid-template-areas: "header header"
+        "mockups description"
+        "mockups description"
+        "footer  footer";
+    grid-template-columns: repeat(2, 720px);
+}
+
+/* HEADER */
+
+.header {
+    position: relative;
+    grid-area: header;
+    width: 250px;
+    margin-top: 2px;
+    margin-right: 20px;
+}
+
+.header img {
+    width: 215px;
+}
+
+/* MOCKUPS */
+
+.mockups {
+    position: relative;
+    grid-area: mockups;
+    width: 709px;
+    height: 450px;
+    margin-top: 82px;
+    margin-left: 3px;
+}
+
+/* DESCRIPTION */
+
+.description {
+    grid-area: description;
+    margin-top: 125px;
+    margin-left: 45px;
+    height: 484px;
+}
+
+.description h2 {
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 500px;
+}
+
+.description p {
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    width: 520px;
+    margin-top: 20px;
+    line-height: 27px;
+    margin-bottom: 39px;
+}
+
+.description a {
+    font-family: 'Poppins', sans-serif;
+    color: var(--violet);
+    font-size: 1.8rem;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 15px 64px;
+    transition: 0.3s;
+    box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description a:hover {
+    background-color: var(--soft-magenta);
+    box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    text-align: end;
+    margin-right: 150px;
+    height: 90px;
+}
+
+.footer .social i {
+    font-size: 2rem;
+    transition: 0.3s;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 9px;
+    width: 40px;
+}
+
+.footer .social a {
+    margin-left: 14px;
+    text-align: center;
+}
+
+.footer .social a:hover,
+.footer .social i:hover {
+    color: var(--soft-magenta);
+    border-color: var(--soft-magenta);
+}
+
+i.fab.fa-twitter,
+i.fab.fa-facebook-f {
+    font-size: 1.7rem;
+    padding: 11px;
+}

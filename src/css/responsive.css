@@ -1,0 +1,109 @@
+@media (max-width: 440px) {
+    body {
+        max-width: 300px;
+        max-height: 800px;
+        background: var(--violet) url(../images/bg-mobile.svg) no-repeat center top;
+        display: flex;
+        position: relative;
+    }
+
+    /* HEADER */
+
+    .header {
+        display: flex;
+        height: 95px;
+        width: 280px;
+        margin: 0;
+        padding-left: 5px;
+        left: -35px;
+        position: absolute;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        margin-top: 2px;
+    }
+
+    .header img {
+        width: 130px;
+    }
+
+    /* MOCKUPS */
+
+    .mockups {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 303px;
+        max-height: 200px;
+        margin-top: 132px;
+        margin-left: -27px;
+    }
+
+    /* DESCRIPTION */
+
+    .description {
+        margin: 0;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        height: 400px;
+        top: 317px;
+        right: 35px;
+    }
+
+    .description h2 {
+        font-size: 2.4rem;
+        width: 270px;
+        text-align: center;
+        margin-top: 25px;
+        padding-top: 10px;
+    }
+
+    .description p {
+        font-size: 1.6rem;
+        width: 300px;
+        text-align: center;
+        line-height: 24px;
+        padding-bottom: 20px;
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 4px;
+    }
+
+    .description a {
+        font-size: 1.2rem;
+        padding: 11px 76px;
+
+    }
+
+    /* FOOTER */
+
+    .footer {
+        margin: 0;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        bottom: -751px;
+        left: 34px;
+        height: 10px;
+        margin-left: 23px;
+    }
+
+    .footer .social i {
+        height: 28px;
+        width: 28px;
+        font-size: 1.3rem;
+        padding: 7px;
+    }
+
+    .footer .social a {
+        margin-right: -6px;
+    }
+}
