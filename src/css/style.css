@@ -3,26 +3,31 @@ html {
 }
 
 body {
-    position: absolute;
-    top: 53%;
-    left: 57.2%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    height:100vh;
+    width: 100vw;
+    
+    background-color: var(--cor-de-fundo); 
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+.container {   
     max-width: 1440px;
-    max-height: 800px;
-    background: var(--violet) url(../images/bg-desktop.svg) no-repeat center center fixed;
-    display: grid;
+    max-height: 800px; 
+    display: grid;    
     grid-template-areas: "header header"
         "mockups description"
         "mockups description"
-        "footer  footer";
+        "footer footer";
     grid-template-columns: repeat(2, 720px);
 }
 
 /* HEADER */
 
-.header {
-    position: relative;
+.header {    
     grid-area: header;
     width: 250px;
     margin-top: 2px;
@@ -35,8 +40,7 @@ body {
 
 /* MOCKUPS */
 
-.mockups {
-    position: relative;
+.mockups {    
     grid-area: mockups;
     width: 709px;
     height: 450px;
@@ -72,7 +76,7 @@ body {
 
 .description a {
     font-family: 'Poppins', sans-serif;
-    color: var(--violet);
+    color: var(--cor-de-fundo);
     font-size: 1.8rem;
     border-radius: 30px;
     background-color: #fff;
@@ -82,7 +86,7 @@ body {
 }
 
 .description a:hover {
-    background-color: var(--soft-magenta);
+    background-color: var(--cor-hover-botao);
     box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -93,30 +97,37 @@ body {
     text-align: end;
     margin-right: 150px;
     height: 90px;
+        
+}
+.footer .social li{
+    display: inline-block;
 }
 
 .footer .social i {
-    font-size: 2rem;
+    font-size: 2.1rem;
     transition: 0.3s;
     border-radius: 50%;
     border: 1px solid #fff;
     padding: 9px;
-    width: 40px;
+    width: 40px;  
 }
 
 .footer .social a {
     margin-left: 14px;
     text-align: center;
+    
 }
 
 .footer .social a:hover,
 .footer .social i:hover {
-    color: var(--soft-magenta);
-    border-color: var(--soft-magenta);
+    color: var(--cor-hover-botao);
+    border-color: var(--cor-hover-botao);
 }
 
 i.fab.fa-twitter,
-i.fab.fa-facebook-f {
+i.fab.fa-facebook-f
+{
     font-size: 1.7rem;
     padding: 11px;
 }
+
